@@ -17,7 +17,7 @@ jobs:
         cache: 'maven'
 
     - name: Build with Maven
-      run: mvn clean package
+      run: mvn clean package -B
 
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
